@@ -1,2 +1,2 @@
 # algorithm
-Java
+Java + algorithm study
