@@ -41,7 +41,7 @@ class Solution {
 		
 		for(int i = 0; i < prices.length; i++)
 		{
-			if(!stack.isEmpty() && stack.peek()[0] > prices[i])
+			while (!stack.isEmpty() && stack.peek()[0] > prices[i]) // 연속적으로 가격이 떨어질 수 있음을 상정
 			{
 				int[] data = stack.poll();
 				answer[data[1]] = i - data[1];
