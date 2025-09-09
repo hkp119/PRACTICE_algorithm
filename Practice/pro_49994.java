@@ -36,6 +36,8 @@ public class pro_49994
     	Set<String> set = new HashSet<>();
         for(int i = 0; i < path.length(); i++)
         {
+          	int nx = x; int ny = y;
+
             if(path.charAt(i) == 'U')
             {
                 if(y == 5) continue;
@@ -56,11 +58,12 @@ public class pro_49994
             	if(x == 5) continue;
             	else x++;
             }
-    		set.add(x+"->"+y);
+    		set.add("(" + nx + "," + ny + ") -> " + "(" + x + "," + y + ")");
+            set.add("(" + x + "," + y + ") -> " + "(" + nx + "," + ny + ")");
         }
 
-        for(String str : set)
-        	System.out.println(str);
-        return set.size();
+        // for(String str : set)
+        // 	System.out.println(str);
+        return set.size() / 2;
     }
 }
