@@ -20,6 +20,7 @@ public class pro_81803 {
     public String solution(int n, int k, String[] cmd) {
         
         ArrayList<Integer> list = new ArrayList<>();
+        Deque<int[]> stack = new ArrayDeque<>();
         for(int i = 0; i < n; i++)
             list.add(i);
         
@@ -45,7 +46,7 @@ public class pro_81803 {
                 case "C":
                     if(!list.isEmpty())
                     {
-                        lastData = list.get(k);
+                        stack.push(new int[] {k, list.get(k)});
                         list.remove(k);    
                         
                         if(!list.isEmpty() && k == list.size())
@@ -53,7 +54,10 @@ public class pro_81803 {
                     }
                     break;
                 case "Z":
-                    list.add(k, lastData);
+                    int [] data = stack.pop();
+                    list.add(data[0], data[1]);
+                    if(k <= data[0])
+                        k++;
                     break;
                 default:
                     return "";
@@ -62,25 +66,17 @@ public class pro_81803 {
                 lastData = list.get(k);
         }
         
-        StringBuilder sb = new StringBuilder();
+        char[] datas = new char[n];
         int idx = 0;
         for(int data : list)
         {
-            if(idx == data)
-            {
-                sb.append("O"); 
-                idx++;                
-            }
-            else
-            {
-                while(idx != data)
-                {
-                    sb.append("X");
-                    idx++;
-                }                
-            }
+            datas[data] = 'O';
         }
-            
-        return sb.toString();
+        for(int i = 0; i < n; i++)
+        {
+            if(datas[i] != 'O')
+                datas[i] = 'X';
+        }
+        return new String(datas);
     }
 }
