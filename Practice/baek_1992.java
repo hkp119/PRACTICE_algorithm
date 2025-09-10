@@ -26,7 +26,7 @@ import java.io.InputStreamReader;
 import java.util.StringTokenizer;
 
 
-public class Main {
+public class baek_1992 {
 	static int N;
 	static char[][] map;
 	static StringBuilder sb = new StringBuilder();

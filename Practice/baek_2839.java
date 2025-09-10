@@ -1,3 +1,10 @@
+/*
+ * 2938. 설탕배달
+ * https://www.acmicpc.net/problem/2839
+ * 
+ * 알고리즘 : greedy
+ */
+
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
@@ -21,7 +28,7 @@ public class baek_2839 {
             N -= 3;
             cnt++;
         }
-        
+
         if(N == 0)
             System.out.println(cnt);
         else
