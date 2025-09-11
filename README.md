@@ -1,5 +1,8 @@
-# Algorithm
-Java + algorithm study
+# Algorithm 
+**Algorithm study**
+* Language : Java
+
+* **1일 1문**
 <br></br>
 # Problem site
 * **programmers**
