@@ -27,8 +27,5 @@
 <br></br>
 
 # Reference site
-
-- **Tree viaualization**
-  - Link : https://visualgo.net/en/bst
-
-가나다라마바사
+* **Tree viaualization**
+    * Link : https://visualgo.net/en/bst       
