@@ -1,12 +1,10 @@
 # Algorithm
 
 **Algorithm study**
-
-- Language : Java
-
-- **1일 1문**
-  <br></br>
-
+* Language : Java
+안녕안녕햐
+* **1일 1문**
+<br></br>
 # Problem site
 
 - **programmers**
