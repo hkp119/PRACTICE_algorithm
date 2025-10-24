@@ -1,7 +1,7 @@
 # Algorithm 
 **Algorithm study**
 * Language : Java
-안녕안녕햐
+
 * **1일 1문**
 <br></br>
 # Problem site
@@ -9,7 +9,7 @@
     *  Link : https://school.programmers.co.kr/learn/challenges?order=recent
 * **Baekjoon**
     * Link : https://www.acmicpc.net/
-* **Leetcode**
+* **Leetcode**햣
     * Link : https://leetcode.com/
 <br></br>
 # Problem
